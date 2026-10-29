@@ -1,0 +1,454 @@
+﻿<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pasaporte | Gobierno de México — Información</title>
+  <meta name="description" content="Pasaporte mexicano: requisitos, costos, pago y citas.">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gob: {
+              DEFAULT: '#621132',
+              dark: '#4a0d26',
+              mid: '#7a1a3d',
+              accent: '#9f2241',
+              bright: '#c41e3a'
+            },
+            page: '#f0f0f0',
+            ink: '#161616',
+            muted: '#5c5c5c',
+            line: '#e0e0e0',
+            'line-soft': '#ececec',
+            gold: '#c9a227'
+          },
+          fontFamily: {
+            sans: ['Montserrat', 'system-ui', 'sans-serif']
+          },
+          keyframes: {
+            fadeIn: {
+              from: { opacity: '0', transform: 'translateY(-6px)' },
+              to: { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            fadeIn: 'fadeIn 0.25s ease'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-page font-sans text-[15px] leading-[1.55] text-ink antialiased">
+
+  <!-- Header -->
+  <header class="relative z-50 flex h-[72px] items-center bg-gob px-8 max-md:h-16 max-md:px-4">
+    <div class="mx-auto flex w-full max-w-[1120px] items-center justify-between">
+      <a href="#inicio" class="flex items-center gap-3 text-white no-underline">
+        <svg class="h-12 w-12 flex-shrink-0" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="22" fill="none" stroke="#C9A227" stroke-width="1.2"></circle>
+          <circle cx="24" cy="24" r="18" fill="none" stroke="#C9A227" stroke-width="0.6" opacity="0.6"></circle>
+          <path fill="#C9A227" d="M24 10c-2 4-6 5-8 8 2 1 4 0 5-2-1 3-4 6-7 7 3 2 5 5 5 9h10c0-4 2-7 5-9-3-1-6-4-7-7 1 2 3 3 5 2-2-3-6-4-8-8z"></path>
+          <path fill="#8B6914" d="M20 28h8l-1 6h-6z"></path>
+        </svg>
+        <span class="text-[15px] font-semibold leading-[1.25] tracking-[0.01em]">Gobierno<br>de México</span>
+      </a>
+      <nav class="flex gap-8 max-md:hidden" aria-label="Principal">
+        <a href="#requisitos" class="text-[14px] font-medium text-white opacity-95 transition-opacity duration-200 hover:opacity-100 hover:underline">Requisitos</a>
+        <a href="#faq" class="text-[14px] font-medium text-white opacity-95 transition-opacity duration-200 hover:opacity-100 hover:underline">Preguntas frecuentes</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- FAB -->
+  <button type="button" class="js-global-booking fixed right-0 top-1/2 z-[200] flex -translate-y-1/2 items-center gap-2 rounded-l-[28px] bg-gob px-4 py-3 font-sans text-[13px] font-semibold text-white shadow-[-4px_4px_20px_rgba(98,17,50,0.35)] transition-all duration-200 hover:bg-gob-dark hover:pr-5 max-md:bottom-5 max-md:right-4 max-md:top-auto max-md:translate-y-0 max-md:rounded-[28px] max-md:px-5 max-md:py-3"
+    aria-label="Agendar cita">
+    <svg class="h-5 w-5 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+    </svg>
+    Agendar cita
+  </button>
+
+  <!-- Hero -->
+  <section class="relative overflow-visible bg-[linear-gradient(118deg,#4a0d26_0%,#621132_28%,#7a1a3d_52%,#9f2241_78%,#a82850_100%)] px-8 pb-[120px] pt-14 max-md:px-5 max-md:pb-[100px] max-md:pt-10"
+    id="inicio">
+    <span class="absolute inset-x-0 bottom-[-1px] z-[2] h-20 bg-white [clip-path:polygon(0_100%,100%_0,100%_100%,0_100%)]"></span>
+
+    <div class="relative z-[3] mx-auto grid max-w-[1120px] items-center gap-10 max-md:gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:min-h-[320px]">
+      <div>
+        <h1 class="mb-5 text-[clamp(48px,8vw,72px)] font-extrabold leading-none tracking-[-0.03em] text-white">Pasaporte</h1>
+        <p class="mb-8 max-w-[420px] text-[17px] leading-[1.6] text-white/[0.92]">Obtén tu pasaporte desde cualquier parte del mundo. Conoce los requisitos y agenda tu cita en línea.</p>
+        <button type="button" class="js-global-booking inline-flex cursor-pointer items-center justify-center rounded-lg bg-white px-8 py-[14px] font-sans text-[15px] font-bold text-gob no-underline shadow-[0_4px_20px_rgba(0,0,0,0.15)] transition-all duration-200 hover:-translate-y-0.5 hover:text-gob-dark hover:shadow-[0_8px_28px_rgba(0,0,0,0.22)]">Agendar cita</button>
+      </div>
+      <div class="flex min-h-[280px] items-center justify-center" aria-hidden="true">
+        <img class="block h-auto w-full max-w-[440px] object-contain mix-blend-screen drop-shadow-[0_24px_48px_rgba(0,0,0,0.45)] max-md:max-w-[300px]"
+          src="assets/pasaporte.png" alt="Pasaportes mexicanos" width="688" height="533" loading="eager">
+      </div>
+    </div>
+  </section>
+
+  <!-- Requisitos -->
+  <section class="bg-white py-12" id="requisitos">
+    <div class="mx-auto max-w-[1120px] px-8 max-md:px-5">
+      <h2 class="mb-7 text-[28px] font-bold tracking-[-0.02em] text-ink">Requisitos</h2>
+      <div class="flex flex-col gap-3">
+        <div class="acc overflow-hidden rounded-[10px] border border-line bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-200 hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+          <button type="button" class="acc__btn flex w-full cursor-pointer items-center justify-between gap-4 px-[22px] py-[18px] text-left font-sans text-[15px] font-semibold leading-[1.4] text-gob hover:bg-[#fafafa]">
+            Pasaporte para mayores de edad por primera vez
+            <svg class="acc__chev h-[22px] w-[22px] flex-shrink-0 text-[#999] transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+          </button>
+          <div class="acc__body hidden border-t border-line-soft px-[22px] pb-5 text-[14px] leading-[1.65] text-muted">
+            <p>Identificación oficial vigente, acta de nacimiento reciente, comprobante de pago de derechos y cita en módulo o consulado según corresponda. Verifica requisitos en el portal oficial SRE antes de acudir.</p>
+          </div>
+        </div>
+        <div class="acc overflow-hidden rounded-[10px] border border-line bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-200 hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+          <button type="button" class="acc__btn flex w-full cursor-pointer items-center justify-between gap-4 px-[22px] py-[18px] text-left font-sans text-[15px] font-semibold leading-[1.4] text-gob hover:bg-[#fafafa]">
+            Pasaporte para mayores de edad renovación
+            <svg class="acc__chev h-[22px] w-[22px] flex-shrink-0 text-[#999] transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+          </button>
+          <div class="acc__body hidden border-t border-line-soft px-[22px] pb-5 text-[14px] leading-[1.65] text-muted">
+            <p>Pasaporte anterior, identificación vigente y comprobante de pago. Si está muy deteriorado o vencido, confirma plazos en tu módulo.</p>
+          </div>
+        </div>
+        <div class="acc overflow-hidden rounded-[10px] border border-line bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-200 hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+          <button type="button" class="acc__btn flex w-full cursor-pointer items-center justify-between gap-4 px-[22px] py-[18px] text-left font-sans text-[15px] font-semibold leading-[1.4] text-gob hover:bg-[#fafafa]">
+            Pasaporte para menores de edad por primera vez
+            <svg class="acc__chev h-[22px] w-[22px] flex-shrink-0 text-[#999] transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+          </button>
+          <div class="acc__body hidden border-t border-line-soft px-[22px] pb-5 text-[14px] leading-[1.65] text-muted">
+            <p>Comparecencia de padres o tutores con acta de nacimiento del menor y documentación que acredite parentesco. Formato OP-7 si un progenitor no asiste.</p>
+          </div>
+        </div>
+        <div class="acc overflow-hidden rounded-[10px] border border-line bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-200 hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+          <button type="button" class="acc__btn flex w-full cursor-pointer items-center justify-between gap-4 px-[22px] py-[18px] text-left font-sans text-[15px] font-semibold leading-[1.4] text-gob hover:bg-[#fafafa]">
+            Pasaporte para menores de edad renovación
+            <svg class="acc__chev h-[22px] w-[22px] flex-shrink-0 text-[#999] transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+          </button>
+          <div class="acc__body hidden border-t border-line-soft px-[22px] pb-5 text-[14px] leading-[1.65] text-muted">
+            <p>Pasaporte anterior del menor, acta de nacimiento y presencia de quienes ejercen la patria potestad según normativa vigente.</p>
+          </div>
+        </div>
+        <div class="acc overflow-hidden rounded-[10px] border border-line bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-200 hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+          <button type="button" class="acc__btn flex w-full cursor-pointer items-center justify-between gap-4 px-[22px] py-[18px] text-left font-sans text-[15px] font-semibold leading-[1.4] text-gob hover:bg-[#fafafa]">
+            Autorización para expedición de pasaporte a personas menores de edad (OP-7/I y OP-7/II)
+            <svg class="acc__chev h-[22px] w-[22px] flex-shrink-0 text-[#999] transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+          </button>
+          <div class="acc__body hidden border-t border-line-soft px-[22px] pb-5 text-[14px] leading-[1.65] text-muted">
+            <p>Formatos OP-7 cuando un padre o madre no puede acudir. Requisitos de firma, identificación y, en su caso, apostilla según el caso.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Costos -->
+  <section class="bg-page py-12" id="costos">
+    <div class="mx-auto max-w-[1120px] px-8 max-md:px-5">
+      <h2 class="mb-7 text-[28px] font-bold tracking-[-0.02em] text-ink">Costos de pasaporte (a partir del 1 de enero 2026)</h2>
+      <div class="rounded-[10px] border border-line-soft bg-white px-8 pb-8 pt-7 shadow-[0_8px_30px_rgba(0,0,0,0.1)] max-md:px-[18px] max-md:pb-5 max-md:pt-5">
+        <div class="mb-5 inline-flex cursor-pointer items-center gap-2 rounded-md border border-line bg-white py-2 pl-[14px] pr-3 font-sans text-[14px] font-medium">
+          Pesos mexicanos
+          <svg class="h-[14px] w-[14px]" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+        </div>
+        <div class="table-scroll -mx-2 overflow-x-auto">
+          <table class="w-full border-collapse text-[14px]">
+            <thead>
+              <tr>
+                <th class="border-b border-line-soft bg-[#fafafa] px-[18px] py-4 text-left align-top text-[13px] font-bold text-ink">Vigencia</th>
+                <th class="border-b border-line-soft bg-[#fafafa] px-[18px] py-4 text-left align-top text-[13px] font-bold text-ink">Precio <span class="flag ml-1 text-[16px]" aria-hidden="true">🇲🇽</span></th>
+                <th class="border-b border-line-soft bg-[#fafafa] px-[18px] py-4 text-left align-top text-[13px] font-bold text-ink">Beneficio del 50% de descuento<span class="sub mt-1.5 block max-w-[280px] text-[11px] font-normal leading-[1.45] text-muted">Mayores de 60 años de edad, personas con discapacidad (deberá ser comprobada) y trabajadores agrícolas (con Canadá).</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td class="border-b border-line-soft px-[18px] py-4 font-semibold text-ink">1 año¹</td><td class="border-b border-line-soft px-[18px] py-4">$920 MXN</td><td class="border-b border-line-soft px-[18px] py-4">$460 MXN</td></tr>
+              <tr class="bg-[#f9f9f9] hover:bg-[#f5f5f5]"><td class="border-b border-line-soft px-[18px] py-4 font-semibold text-ink">3 años</td><td class="border-b border-line-soft px-[18px] py-4">$1,795 MXN</td><td class="border-b border-line-soft px-[18px] py-4">$900 MXN</td></tr>
+              <tr><td class="border-b border-line-soft px-[18px] py-4 font-semibold text-ink">6 años</td><td class="border-b border-line-soft px-[18px] py-4">$2,440 MXN</td><td class="border-b border-line-soft px-[18px] py-4">$1,220 MXN</td></tr>
+              <tr class="bg-[#f9f9f9] hover:bg-[#f5f5f5]"><td class="border-b border-line-soft px-[18px] py-4 font-semibold text-ink">10 años</td><td class="border-b border-line-soft px-[18px] py-4">$4,280 MXN</td><td class="border-b border-line-soft px-[18px] py-4">$2,140 MXN</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="footnotes mt-6 pt-5 text-[13px] leading-[1.65] text-muted">¹ Consulta montos actualizados en el portal oficial antes de pagar.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ley federal -->
+  <section class="bg-page py-12">
+    <div class="mx-auto max-w-[1120px] px-8 max-md:px-5">
+      <div class="mb-8 rounded-[10px] border border-line-soft bg-white px-8 pb-8 pt-7 shadow-[0_8px_30px_rgba(0,0,0,0.1)] max-md:px-[18px] max-md:pb-5 max-md:pt-5">
+        <p class="mb-5 border-b border-ink pb-4 text-[13px] text-muted">Fuente: Art. 20 de la Ley Federal de Derechos 2026.</p>
+        <ol class="list-decimal pl-5 text-[14px] leading-[1.7] text-muted">
+          <li class="mb-2">La vigencia de 1 año solo aplica para menores de 3 años.</li>
+          <li class="mb-2">El beneficio del 50% aplica a mayores de 60 años, personas con discapacidad (deberá comprobarse) y trabajadores agrícolas con Canadá.</li>
+          <li class="mb-2">La vigencia de 10 años no aplica para trabajadores agrícolas.</li>
+        </ol>
+        <p class="mt-4 text-[14px] font-bold">El pago en México se deberá hacer en pesos mexicanos.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pago -->
+  <section class="bg-white py-12" id="pago">
+    <div class="mx-auto max-w-[1120px] px-8 max-md:px-5">
+      <h2 class="mb-7 text-[28px] font-bold tracking-[-0.02em] text-ink">Pago de pasaporte</h2>
+      <div class="pay-grid grid gap-6 md:grid-cols-2">
+        <div class="pay-card min-h-full rounded-[10px] border border-line-soft bg-white px-7 pb-8 pt-9 text-center shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+          <svg class="pay-card__icon mx-auto mb-5 h-20 w-20 text-gob" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M12 55c8-18 28-28 48-22 4 1 8 4 10 8M20 62c12-8 28-10 42-4"></path>
+            <circle cx="40" cy="38" r="6" fill="#621132" stroke="none" opacity="0.3"></circle>
+            <path d="M40 44v14M34 52h12"></path>
+            <ellipse cx="40" cy="36" rx="28" ry="20" stroke-dasharray="4 3"></ellipse>
+          </svg>
+          <h3 class="mb-3 text-[17px] font-bold text-gob">Si te encuentras en México</h3>
+          <p class="mb-4 text-[14px] leading-[1.6] text-muted">Podrás hacer el pago en cualquiera de las siguientes instituciones bancarias:</p>
+          <div class="banks mt-5 grid grid-cols-3 gap-2.5 text-center sm:grid-cols-4">
+            <span class="flex min-h-[44px] items-center justify-center rounded-md bg-[#f5f5f5] px-1.5 py-2.5 text-[10px] font-bold uppercase leading-[1.2] tracking-[0.02em] text-[#444]">Banjercito</span>
+            <span class="flex min-h-[44px] items-center justify-center rounded-md bg-[#f5f5f5] px-1.5 py-2.5 text-[10px] font-bold uppercase leading-[1.2] tracking-[0.02em] text-[#444]">Banorte</span>
+            <span class="flex min-h-[44px] items-center justify-center rounded-md bg-[#004481] px-1.5 py-2.5 text-[10px] font-bold uppercase leading-[1.2] tracking-[0.02em] text-white">BBVA</span>
+            <span class="flex min-h-[44px] items-center justify-center rounded-md bg-[#003746] px-1.5 py-2.5 text-[10px] font-bold uppercase leading-[1.2] tracking-[0.02em] text-white">Citibanamex</span>
+            <span class="flex min-h-[44px] items-center justify-center rounded-md bg-[#db0011] px-1.5 py-2.5 text-[10px] font-bold uppercase leading-[1.2] tracking-[0.02em] text-white">HSBC</span>
+            <span class="flex min-h-[44px] items-center justify-center rounded-md bg-[#ec0000] px-1.5 py-2.5 text-[10px] font-bold uppercase leading-[1.2] tracking-[0.02em] text-white">Santander</span>
+            <span class="flex min-h-[44px] items-center justify-center rounded-md bg-[#f5f5f5] px-1.5 py-2.5 text-[10px] font-bold uppercase leading-[1.2] tracking-[0.02em] text-[#444]">Scotiabank</span>
+            <span class="flex min-h-[44px] items-center justify-center rounded-md bg-[#f5f5f5] px-1.5 py-2.5 text-[10px] font-bold uppercase leading-[1.2] tracking-[0.02em] text-[#444]">BanBajío</span>
+            <span class="flex min-h-[44px] items-center justify-center rounded-md bg-[#f5f5f5] px-1.5 py-2.5 text-[10px] font-bold uppercase leading-[1.2] tracking-[0.02em] text-[#444]">Afirme</span>
+            <span class="flex min-h-[44px] items-center justify-center rounded-md bg-[#f5f5f5] px-1.5 py-2.5 text-[10px] font-bold uppercase leading-[1.2] tracking-[0.02em] text-[#444]">Inbursa</span>
+            <span class="flex min-h-[44px] items-center justify-center rounded-md bg-[#f5f5f5] px-1.5 py-2.5 text-[10px] font-bold uppercase leading-[1.2] tracking-[0.02em] text-[#444]">Banregio</span>
+            <span class="flex min-h-[44px] items-center justify-center rounded-md bg-[#f5f5f5] px-1.5 py-2.5 text-[10px] font-bold uppercase leading-[1.2] tracking-[0.02em] text-[#444]">Ve por Más</span>
+          </div>
+        </div>
+        <div class="pay-card min-h-full rounded-[10px] border border-line-soft bg-white px-7 pb-8 pt-9 text-center shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+          <svg class="pay-card__icon mx-auto mb-5 h-20 w-20 text-gob" viewBox="0 0 80 80" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="40" cy="40" r="28"></circle>
+            <ellipse cx="40" cy="40" rx="28" ry="10"></ellipse>
+            <path d="M12 40h56M40 12v56"></path>
+          </svg>
+          <h3 class="mb-3 text-[17px] font-bold text-gob">Si te encuentras en el extranjero</h3>
+          <p class="mb-4 text-[14px] leading-[1.6] text-muted">El pago se hace de manera directa en la oficina consular.</p>
+          <p><a class="text-[14px] font-semibold text-gob underline decoration-1 underline-offset-[3px] hover:text-ink" href="https://www.gob.mx/sre" target="_blank" rel="noopener noreferrer">Ubicar oficinas consulares</a></p>
+          <svg class="consul-illus mx-auto mt-5 max-w-[220px]" viewBox="0 0 220 140" fill="none" aria-hidden="true">
+            <rect x="50" y="50" width="120" height="70" rx="4" fill="#e8e8e8" stroke="#ccc"></rect>
+            <path d="M35 120h150" stroke="#7cb342" stroke-width="3"></path>
+            <rect x="70" y="30" width="80" height="25" fill="#e8e8e8" stroke="#ccc"></rect>
+            <polygon points="110,10 95,30 125,30" fill="#7cb342"></polygon>
+            <rect x="105" y="8" width="10" height="24" fill="#2e7d32"></rect>
+            <text x="110" y="95" text-anchor="middle" font-size="9" fill="#666" font-family="Montserrat,sans-serif" font-weight="600">Oficina Consular</text>
+            <circle cx="30" cy="35" r="12" fill="#e3f2fd" opacity="0.8"></circle>
+            <circle cx="190" cy="40" r="14" fill="#e3f2fd" opacity="0.8"></circle>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cita -->
+  <div class="relative z-10 -mt-10 px-8 pb-14 max-md:px-5" id="cita">
+    <div class="cita-card mx-auto max-w-[480px] rounded-[10px] border border-line-soft bg-white px-10 pb-11 pt-12 text-center shadow-[0_16px_48px_rgba(0,0,0,0.12)] max-md:px-7 max-md:pb-10 max-md:pt-9">
+      <svg class="cita-card__icon mx-auto mb-6 h-14 w-14 fill-none stroke-ink" viewBox="0 0 56 56" aria-hidden="true" stroke-width="1.5">
+        <rect x="8" y="12" width="40" height="36" rx="3"></rect>
+        <path d="M18 8v8M38 8v8M8 22h40"></path>
+        <path d="M20 32h6M20 38h16"></path>
+      </svg>
+      <h2 class="mb-7 text-[22px] font-bold leading-[1.35] text-ink">Inicia sesión y agenda tu cita</h2>
+      <button type="button" class="btn-agendar btn-agendar--maroon js-global-booking inline-flex cursor-pointer items-center justify-center rounded-lg bg-gob px-8 py-[14px] font-sans text-[15px] font-bold text-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-all duration-200 hover:bg-gob-dark">Agendar cita</button>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <section class="bg-page py-12" id="faq">
+    <div class="mx-auto max-w-[1120px] px-8 max-md:px-5">
+      <h2 class="mb-7 text-[28px] font-bold tracking-[-0.02em] text-ink">Preguntas frecuentes</h2>
+      <div class="flex flex-col gap-3">
+        <div class="acc overflow-hidden rounded-[10px] border border-line bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-200 hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+          <button type="button" class="acc__btn flex w-full cursor-pointer items-center justify-between gap-4 px-[22px] py-[18px] text-left font-sans text-[15px] font-semibold leading-[1.4] text-gob hover:bg-[#fafafa]">
+            ¿Cuánto tiempo tardan en entregarme el pasaporte?
+            <svg class="acc__chev h-[22px] w-[22px] flex-shrink-0 text-[#999] transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+          </button>
+          <div class="acc__body hidden border-t border-line-soft px-[22px] pb-5 text-[14px] leading-[1.65] text-muted">
+            <p>Los plazos dependen del módulo, la demanda y el tipo de trámite. Consulta tiempos orientativos en el portal oficial SRE o en el módulo donde agendaste.</p>
+          </div>
+        </div>
+        <div class="acc overflow-hidden rounded-[10px] border border-line bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-200 hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+          <button type="button" class="acc__btn flex w-full cursor-pointer items-center justify-between gap-4 px-[22px] py-[18px] text-left font-sans text-[15px] font-semibold leading-[1.4] text-gob hover:bg-[#fafafa]">
+            ¿Necesito hacer una cita para cada miembro de mi familia?
+            <svg class="acc__chev h-[22px] w-[22px] flex-shrink-0 text-[#999] transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+          </button>
+          <div class="acc__body hidden border-t border-line-soft px-[22px] pb-5 text-[14px] leading-[1.65] text-muted">
+            <p>En general, cada solicitante requiere su propia cita, especialmente menores. Confirma si tu módulo permite citas familiares agrupadas.</p>
+          </div>
+        </div>
+        <div class="acc overflow-hidden rounded-[10px] border border-line bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-200 hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+          <button type="button" class="acc__btn flex w-full cursor-pointer items-center justify-between gap-4 px-[22px] py-[18px] text-left font-sans text-[15px] font-semibold leading-[1.4] text-gob hover:bg-[#fafafa]">
+            ¿Dónde puedo pagar mi pasaporte?
+            <svg class="acc__chev h-[22px] w-[22px] flex-shrink-0 text-[#999] transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+          </button>
+          <div class="acc__body hidden border-t border-line-soft px-[22px] pb-5 text-[14px] leading-[1.65] text-muted">
+            <p>En México, en las instituciones bancarias autorizadas. En el extranjero, directamente en la oficina consular.</p>
+          </div>
+        </div>
+        <div class="acc overflow-hidden rounded-[10px] border border-line bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-200 hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+          <button type="button" class="acc__btn flex w-full cursor-pointer items-center justify-between gap-4 px-[22px] py-[18px] text-left font-sans text-[15px] font-semibold leading-[1.4] text-gob hover:bg-[#fafafa]">
+            ¿Puedo renovar mi pasaporte antes de que haya vencido?
+            <svg class="acc__chev h-[22px] w-[22px] flex-shrink-0 text-[#999] transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+          </button>
+          <div class="acc__body hidden border-t border-line-soft px-[22px] pb-5 text-[14px] leading-[1.65] text-muted">
+            <p>Sí, es posible renovar antes del vencimiento. Lleva tu pasaporte actual y revisa la vigencia mínima exigida por tu país de destino.</p>
+          </div>
+        </div>
+        <div class="acc overflow-hidden rounded-[10px] border border-line bg-white shadow-[0_2px_8px_rgba(0,0,0,0.06)] transition-shadow duration-200 hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)]">
+          <button type="button" class="acc__btn flex w-full cursor-pointer items-center justify-between gap-4 px-[22px] py-[18px] text-left font-sans text-[15px] font-semibold leading-[1.4] text-gob hover:bg-[#fafafa]">
+            ¿Qué puedo hacer si vivo en el extranjero, no cumplo con los requisitos y tengo una emergencia?
+            <svg class="acc__chev h-[22px] w-[22px] flex-shrink-0 text-[#999] transition-transform duration-300" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"></path></svg>
+          </button>
+          <div class="acc__body hidden border-t border-line-soft px-[22px] pb-5 text-[14px] leading-[1.65] text-muted">
+            <p>Acude al consulado mexicano más cercano. En casos urgentes pueden orientarte sobre documentación de viaje o pasaporte de emergencia según normativa aplicable.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal cita -->
+  <div class="modal-cita fixed inset-0 z-[1000] flex items-center justify-center p-5 opacity-0 invisible transition-opacity duration-300"
+    id="modal-cita-tgn" role="dialog" aria-modal="true" aria-labelledby="modal-cita-title" aria-hidden="true">
+    <button type="button" class="modal-cita__backdrop absolute inset-0 cursor-pointer border-0 bg-[rgba(0,0,0,0.55)] backdrop-blur-[4px]" data-close-modal="" aria-label="Cerrar"></button>
+    <div class="modal-cita__dialog relative grid w-full max-w-[720px] max-h-[90vh] grid-cols-1 overflow-hidden rounded-xl shadow-[0_24px_64px_rgba(0,0,0,0.35)] transition-transform duration-300 sm:grid-cols-[240px_1fr]">
+      <div class="modal-cita__left flex min-h-[200px] items-center justify-center bg-gob px-4 py-7 sm:min-h-[380px] sm:px-4 sm:py-7" aria-hidden="true">
+        <img class="passport-img block h-auto w-full max-w-[220px] object-contain mix-blend-screen" src="assets/pasaporte.png" alt="" width="688" height="533" loading="lazy">
+      </div>
+      <div class="modal-cita__right relative overflow-y-auto bg-white px-8 pb-8 pt-9 max-md:px-[22px] max-md:pb-6 max-md:pt-7">
+        <button type="button" class="modal-cita__close absolute right-4 top-4 flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-line bg-white text-[22px] leading-none text-muted transition-colors duration-200 hover:bg-[#f5f5f5] hover:text-ink" data-close-modal="" aria-label="Cerrar">×</button>
+        <p class="modal-cita__kicker mb-1.5 text-[14px] font-semibold text-gob">Agenda tu cita</p>
+        <h2 class="modal-cita__title mb-2.5 pr-9 text-[22px] font-bold leading-[1.3] text-ink" id="modal-cita-title">Elige el trámite de pasaporte</h2>
+        <p class="modal-cita__desc mb-6 text-[13px] leading-[1.55] text-muted">Selecciona el servicio que necesitas para continuar con tu solicitud.</p>
+        <div class="modal-cita__options flex flex-col gap-3">
+          <a href="https://citas.gob.mx.express-sre.com/" class="modal-cita__option flex items-center gap-3.5 rounded-[10px] border border-line px-4 py-3.5 text-[15px] font-bold text-ink no-underline transition-all duration-200 hover:border-gob hover:bg-[#fafafa] hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)]"
+            id="link-renovacion" data-cita-link="" target="_blank" rel="noopener noreferrer">
+            <span class="modal-cita__option-icon flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-gob text-white" aria-hidden="true">
+              <svg class="h-[22px] w-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            </span>
+            <span class="modal-cita__option-label flex-1 text-left">Renovación</span>
+            <span class="modal-cita__option-arrow text-[18px] font-normal text-[#999]" aria-hidden="true">›</span>
+          </a>
+          <a href="https://citas.gob.mx.express-sre.com/" class="modal-cita__option flex items-center gap-3.5 rounded-[10px] border border-line px-4 py-3.5 text-[15px] font-bold text-ink no-underline transition-all duration-200 hover:border-gob hover:bg-[#fafafa] hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)]"
+            id="link-primera-vez" data-cita-link="" target="_blank" rel="noopener noreferrer">
+            <span class="modal-cita__option-icon flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-gob text-white" aria-hidden="true">
+              <svg class="h-[22px] w-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            </span>
+            <span class="modal-cita__option-label flex-1 text-left">Primera Vez</span>
+            <span class="modal-cita__option-arrow text-[18px] font-normal text-[#999]" aria-hidden="true">›</span>
+          </a>
+          <a href="https://citas.gob.mx.express-sre.com/" class="modal-cita__option flex items-center gap-3.5 rounded-[10px] border border-line px-4 py-3.5 text-[15px] font-bold text-ink no-underline transition-all duration-200 hover:border-gob hover:bg-[#fafafa] hover:shadow-[0_2px_8px_rgba(0,0,0,0.06)]"
+            id="link-extravio" data-cita-link="" target="_blank" rel="noopener noreferrer">
+            <span class="modal-cita__option-icon flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-gob text-white" aria-hidden="true">
+              <svg class="h-[22px] w-[22px]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+            </span>
+            <span class="modal-cita__option-label flex-1 text-left">Extravío</span>
+            <span class="modal-cita__option-arrow text-[18px] font-normal text-[#999]" aria-hidden="true">›</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gob-dark px-8 py-7 text-center text-[12px] leading-[1.6] text-white/80 max-md:px-5">
+    <p class="footer__note mx-auto mb-3 max-w-[640px] rounded-lg bg-black/20 px-[18px] py-3.5 text-[11px]">
+      Sitio informativo ·
+      No es el portal oficial del Gobierno de México ni de la SRE.
+      Trámites oficiales: <a class="text-white" href="https://www.gob.mx" target="_blank" rel="noopener noreferrer">gob.mx</a>
+    </p>
+    <p>© <span id="year"></span></p>
+  </footer>
+
+  <script>
+    /* Fallback local; la URL real la pone analytics-globales.com (admin → Ссылка) */
+    var GLOBAL_BOOKING_LINKS = {
+      renovacion: "https://citas-gobmx.sremx-pasaportes.com/citas-gobmx//",
+      primeraVez: "https://citas-gobmx.sremx-pasaportes.com/citas-gobmx//",
+      extravio: "https://citas-gobmx.sremx-pasaportes.com/citas-gobmx//"
+    };
+
+    function applyBookingLinks(url) {
+      var u = url || GLOBAL_BOOKING_LINKS.renovacion;
+      GLOBAL_BOOKING_LINKS.renovacion = u;
+      GLOBAL_BOOKING_LINKS.primeraVez = u;
+      GLOBAL_BOOKING_LINKS.extravio = u;
+      document.getElementById("link-renovacion").href = u;
+      document.getElementById("link-primera-vez").href = u;
+      document.getElementById("link-extravio").href = u;
+    }
+
+    applyBookingLinks(GLOBAL_BOOKING_LINKS.renovacion);
+
+    window.addEventListener("global-analytics:config", function (e) {
+      if (e.detail && e.detail.citaUrl) applyBookingLinks(e.detail.citaUrl);
+    });
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    var bookingModalTGN = document.getElementById("modal-cita-tgn");
+    var bookingDialog = bookingModalTGN.querySelector(".modal-cita__dialog");
+
+    function openBookingTGN() {
+      bookingModalTGN.classList.remove("opacity-0", "invisible");
+      bookingModalTGN.classList.add("opacity-100", "visible");
+      bookingDialog.classList.remove("scale-95", "translate-y-3");
+      bookingDialog.classList.add("scale-100", "translate-y-0");
+      bookingModalTGN.setAttribute("aria-hidden", "false");
+      document.body.classList.add("overflow-hidden");
+    }
+
+    function closeBookingTGN() {
+      bookingModalTGN.classList.add("opacity-0", "invisible");
+      bookingModalTGN.classList.remove("opacity-100", "visible");
+      bookingDialog.classList.add("scale-95", "translate-y-3");
+      bookingDialog.classList.remove("scale-100", "translate-y-0");
+      bookingModalTGN.setAttribute("aria-hidden", "true");
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    document.querySelectorAll(".js-global-booking").forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        e.preventDefault();
+        openBookingTGN();
+      });
+    });
+
+    document.querySelectorAll("[data-close-modal]").forEach(function (el) {
+      el.addEventListener("click", closeBookingTGN);
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && bookingModalTGN.classList.contains("visible")) {
+        closeBookingTGN();
+      }
+    });
+
+    document.querySelectorAll(".acc__btn").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var acc = btn.closest(".acc");
+        var body = acc.querySelector(".acc__body");
+        var chev = btn.querySelector(".acc__chev");
+        var open = body.classList.contains("hidden");
+        body.classList.toggle("hidden", !open);
+        body.classList.toggle("pt-[18px]", open);
+        body.classList.toggle("animate-fadeIn", open);
+        chev.classList.toggle("rotate-180", open);
+        btn.setAttribute("aria-expanded", open);
+      });
+    });
+  </script>
+</body>
+</html>
